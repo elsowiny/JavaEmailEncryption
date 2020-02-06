@@ -24,12 +24,17 @@ public class App
             final String gmailEmail = "@gmail.com";
             final String password = "";
             
-            String from = "@gmail.com";
-            String recipent = "yahoo.com";
+            String from = gmailEmail;
+            String recipent = "@gmail.com";
             String subject = "TEST subject";
             String msg = "This message is being sent \n\n"
             		+ "via java";
+            //set this password but your recipient need know the cryptPassword in order
+            //to decrypt their message
+            String cryptPassWord = "crypticPassWord";
+            
 
+            msg = crypto.encrypt(cryptPassWord, msg);
             Properties prop = new Properties();
     		prop.put("mail.smtp.host", "smtp.gmail.com");
             prop.put("mail.smtp.port", "465");

@@ -28,6 +28,13 @@
 	    <artifactId>mail</artifactId>
 	    <version>1.4.7</version>
 	</dependency>
+	
+	 <dependency>
+      <groupId>org.jasypt</groupId>
+      <artifactId>jasypt</artifactId>
+      <version>1.9.3</version>
+      <scope>compile</scope>
+    </dependency>
     
   </dependencies>
 </project>
